@@ -1,8 +1,9 @@
+
+from typing import Dict, List
 from types import SimpleNamespace
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 from langchain.prompts.example_selector.base import BaseExampleSelector
-from typing import Dict, List, Self
 
 # qdrant = QdrantClient(path="db")
 semantic_model = SentenceTransformer('thenlper/gte-large')
