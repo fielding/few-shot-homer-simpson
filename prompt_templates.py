@@ -17,3 +17,6 @@ COMBINED_TEMPLATE="""{main}
 ## Conversation
 {conversation}
 """
+
+
+EXAMPLE_TEMPLATE = "Person: {prompt}\nHomer: {response}"

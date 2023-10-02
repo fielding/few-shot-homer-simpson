@@ -10,7 +10,7 @@ from langchain.prompts import PromptTemplate, FewShotPromptTemplate
 
 from homer_example_selector import HomerExampleSelector
 
-from prompt_templates import MAIN_TEMPLATE, CONVERSATION_TEMPLATE, COMBINED_TEMPLATE
+from prompt_templates import MAIN_TEMPLATE, CONVERSATION_TEMPLATE, COMBINED_TEMPLATE, EXAMPLE_TEMPLATE
 
 if "sidebar_state" not in st.session_state:
     st.session_state.sidebar_state = "expanded"
@@ -44,11 +44,10 @@ memory = ConversationBufferMemory(
 )
 
 
-example_template = "Person: {prompt}\nHomer: {response}"
 
 
 example_prompt = PromptTemplate(
-    input_variables=["prompt", "response"], template=example_template
+    input_variables=["prompt", "response"], template=EXAMPLE_TEMPLATE
 )
 
 example_selector = HomerExampleSelector()
