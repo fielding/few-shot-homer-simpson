@@ -15,6 +15,9 @@ Remarkably, this lightweight prompting and exposure to representative dialog sni
 
 While a relatively simple experiment, it highlights the impressive capabilities of large language models to implicitly learn nuanced human speech dynamics when supplied with suitable source material and incentives. The AI picked up on subtle attributes from the examples that would likely elude an explicit rule-based approach.
 
+![homer-example-chat](https://github.com/fielding/few-shot-homer-simpson/blob/main/img/example.png?raw=true)
+
+
 ### Post-mortem
 #### Identity
 While I didn't directly inform the model that it was Homer Simpson, I did mention that it was a man named Homer. This was due to some dialog lines containing his name. I tested the prompt both with and without the examples, and the model fabricated information about "Homer" without the examples. However, I'm concerned that the examples might have made it obvious that I was referring to Homer Simpson, potentially allowing the model to draw from its pre-trained data.
