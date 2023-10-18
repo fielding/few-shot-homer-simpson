@@ -3,7 +3,7 @@ Homer Simpson
 
 ### Mimicking a Character via Few-Shot Priming without Explicit Instructions
 
-An experiment to see if a pre-trained multi-modal chat model could be taught to mimic the distinctive speech patterns and personality of Homer Simpson solely by exposure to relevant example dialog from the show, without explicitly informing it that the goal was to imitate Homer.
+An experiment to see if a pre-trained chat model could be taught to mimic the distinctive speech patterns and personality of Homer Simpson solely by exposure to relevant example dialog from the show, without explicitly informing it that the goal was to imitate Homer.
 
 To provide the necessary data, I sourced transcripts of all episodes of The Simpsons and extracted over 28,000 lines spoken by Homer directly in response to another character. I separated these into prompts and responses, taking care to retain the metadata linking related pairs together.
 
